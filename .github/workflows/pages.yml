@@ -14,8 +14,8 @@ on:
   workflow_dispatch:
 
 defaults:
- run:
-  working-directory: ./docs
+  run:
+    working-directory: ./docs
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
