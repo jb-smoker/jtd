@@ -7,10 +7,10 @@ on:
 
 jobs:
   # Build job
-  env:
-    working-directory: docs
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: docs
     defaults:
       run:
         working-directory: docs
