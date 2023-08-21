@@ -7,6 +7,8 @@ on:
 
 jobs:
   # Build job
+  env:
+    working-directory: docs
   build:
     runs-on: ubuntu-latest
     defaults:
@@ -23,5 +25,3 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Build with Jekyll
         run: bundle exec jekyll build
-        with:
-          working-directory: '${{ github.workspace }}/docs'
